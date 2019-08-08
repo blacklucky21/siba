@@ -44,9 +44,9 @@ public class MyElServlet extends HttpServlet {
 		
 		Person blacklucky = new Person(name,gender,age);
 		request.setAttribute("person",blacklucky);
-		request.setAttribute("beverage",beverage);
+		/* request.setAttribute("beverage",beverage); */
 		request.setAttribute("year",2019);
-		request.setAttribute("products",products);
+		request.setAttribute("product",products);
 		
 		/***** Session Scope, Application Scope 접근해서 값 전달 *****/
 		
@@ -60,6 +60,12 @@ public class MyElServlet extends HttpServlet {
 		ServletContext application = request.getServletContext();
 		application.setAttribute("movie", movie);
 		
+		
+		
+		/***** name conflict 만들기 *****/
+		
+		session.setAttribute("beverage", "핫식스");
+		application.setAttribute("beverage","물");
 		
 		request.getRequestDispatcher("/02_el/01_2_elEnd.jsp").forward(request, response);
 		

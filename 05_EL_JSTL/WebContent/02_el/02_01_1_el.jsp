@@ -8,7 +8,7 @@
 <style>.item{font-weight: bold; color: yellowgreen;}</style>
 </head>
 <body>
-	<form action="myEL.do" method="post">
+	<form action="<%=request.getContextPath() %>/myEL.do" method="post">
 		<h2>개인정보 입력</h2>
 		이름 : <input type="text" name="name" id="name"><br>
 		성별 : <input type="radio" name="gender" value="남">남자
