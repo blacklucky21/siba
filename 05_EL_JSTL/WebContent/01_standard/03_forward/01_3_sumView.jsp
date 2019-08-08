@@ -13,7 +13,7 @@
 		String secondNum = request.getParameter("secondNum");
 		
 		int result = (int)request.getAttribute("result");
-		
+			
 		
 		%>
 		
