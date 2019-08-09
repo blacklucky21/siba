@@ -40,10 +40,18 @@
 		컨텍스트 파라미터(스크립팅 ) : <%= application.getInitParameter("contextParam") %>
 		
 		
-		<form action="<%=request.getContextPath()%>/ELObject.do" method="post">
-		
+		<%-- <form action="<%=request.getContextPath()%>/ELObject.do" method="post"> --%>
+		<form action="${pageContext.request.contextPath}/ELObject.do" method="post">
 			<input type="submit" value="전송">
 		</form>
+		
+		<hr>
+		
+		<h3>pageContext</h3>
+		method : ${pageContext.request.method}<br>
+		contextPath : ${pageContext.request.contextPath}<br>
+		
+		
 		
 </body>
 </html>

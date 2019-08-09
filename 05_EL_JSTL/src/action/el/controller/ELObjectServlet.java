@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ELObjectServlet
  */
-@WebServlet("/ELObject.do")
+//@WebServlet("/ELObject.do")
 public class ELObjectServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -30,7 +30,7 @@ public class ELObjectServlet extends HttpServlet {
 		String contextParam = getServletContext().getInitParameter("contextParam");
 		System.out.println(contextParam);
 		
-		String initParam = getServletContext().getInitParameter("initParam");
+		String initParam = getServletConfig().getInitParameter("initParam");
 		System.out.println(initParam);
 	}
 

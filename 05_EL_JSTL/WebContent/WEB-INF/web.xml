@@ -17,7 +17,7 @@
   
   <servlet>
   	<servlet-name>paramTest</servlet-name>
-  	<servlet-class>action.el.controller.ELObjectSrevlet</servlet-class>
+  	<servlet-class>action.el.controller.ELObjectServlet</servlet-class>
   	<init-param>
   		<param-name>initParam</param-name>
   		<param-value>blacklucky21@naver.com</param-value>

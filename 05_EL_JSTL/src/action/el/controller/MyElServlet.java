@@ -33,6 +33,13 @@ public class MyElServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		
+		
+		String contextParam = getServletContext().getInitParameter("contextParam");
+		System.out.println(contextParam);
+		
+		String initParam = getServletConfig().getInitParameter("initParam");
+		System.out.println(initParam);
+		
 		String name = request.getParameter("name");
 		char gender = request.getParameter("gender").charAt(0);
 		int age = Integer.parseInt(request.getParameter("age"));
