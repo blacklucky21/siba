@@ -21,6 +21,13 @@
   	<init-param>
   		<param-name>initParam</param-name>
   		<param-value>blacklucky21@naver.com</param-value>
+  		
+  		<!-- context-param , init-param의 차이 : context-param은 모든 servlet에서 사용가능하게함 static같은 존재...
+  		
+  		init-param => 특정  servlet내에서만 사용가능
+  		
+  		
+  		 -->
   	</init-param>
   </servlet>
   

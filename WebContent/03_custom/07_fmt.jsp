@@ -26,6 +26,11 @@
 		
 		
 		
+		<h3>type 속성으로 백분율, 통화기호 표시 처리</h3>
+		<fmt:formatNumber value="0.12" type="percent"/><br>
+		<fmt:formatNumber value="123456789" type="currency"/>
+		
+		
 		
 </body>
 </html>
